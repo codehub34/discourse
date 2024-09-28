@@ -8,6 +8,12 @@ const toggleNavbarVisibility = () => {
   navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
 };
 
+function getUpdate(){
+  let username = getElementById("username).value;
+  let email = getElementById("email").value;
+  getElementById("result").innerHTML = 'Thanks for submiting ${username} we'll get to you soon!'
+}
+
 navbarToggle.addEventListener("click", toggleNavbarVisibility);
 
 navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
