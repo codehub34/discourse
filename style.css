@@ -32,6 +32,7 @@
     left: 0;
     right: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
   }
   
   .navbar-container {
@@ -391,10 +392,10 @@ border: none;
    }
    .main-content {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300, 1fr));
-    grid-row-gap: 25px;
-    grid-column-gap: 25px;
+   display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
    }
    .main-content .img-box{
     position: relative;
@@ -403,8 +404,7 @@ border: none;
     box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
     height: 250px;
     overflow: hidden;
-    border-top-left-radius: 45px;
-    border-bottom-right-radius: 45px;
+  
    }
    .main-content .img-box::before{
     content: '';
